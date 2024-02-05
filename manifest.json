@@ -1,0 +1,27 @@
+{
+  "name": "Mufins",
+  "version": "0.1.0",
+  "description": "This is just a demo app",
+  "permissions": ["tabs"],
+  "host_permissions": ["http://*.watir.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.watir.com/*"],
+      "js": ["contentScript.js"],
+      "css" : ["assets/green.css"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_title": "Muffins",
+    "default_popup": "dist/popup.html"
+  },
+  "manifest_version": 3
+}

@@ -1,0 +1,16 @@
+.container {
+	width: 150px;
+	text-align: center;
+}
+
+.item {
+	height: 30px;
+	align-items: baseline;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+.image {
+	width: 20px;
+	height: 20px;
+}
